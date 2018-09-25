@@ -19,10 +19,10 @@ How to install:
 
 For all platforms: To compile, type `make` at the terminal. To install, type `make install` at the terminal. You may specify `--prefix=PATH/TO/LOCATION` if you wish; the default is `/usr/local`, which places swipe in `/usr/local/bin`. 
 
-Linux: All the large libraries should be available as packages if you're using a "modern" distro. For instance, on a Ubuntu system (Ubuntu 9.04, "Jaunty Jackalope", kernel 2.6.28-13-generic), I ran:
+Linux: All the large libraries should be available as packages if you're using a "modern" distro. For instance, on a Ubuntu system (Ubuntu 9.04, "Jaunty Jackalope", kernel 2.6.28-13-generic), commands:
 
     sudo apt-get install liblibblas-dev liblapack-dev libfftw3-dev libsndfile1-dev swig
-
+    
 This installs the necessary libraries and all their dependencies. Similar
 incantations are available for other Linux distributions.
 
@@ -37,6 +37,11 @@ If you are superuser and wish to install globally the autoconf method should wor
 These two libraries are also available via Fink and DarwinPorts.
 
 Windows/CYGWIN: Unsupported. Send details of any successes, however.
+
+Then, please go in the terminal in the swipe-installer directory and execute the following command to complete the installation
+
+    make
+    sudo make install
 
 Audio file formats:
 -------------------
